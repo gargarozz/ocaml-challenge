@@ -1,5 +1,3 @@
-
-
 let best_offer (o1:int option) (o2:int option) (o3:int option) = 
   let lst = List.filter_map (fun x -> x) [o1;o2;o3] in
   match lst with

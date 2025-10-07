@@ -1,0 +1,28 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/nicola/.cache/dune/db
+# Workspace root: /home/nicola/ocaml-challenge/1/even-odd/solution
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/nicola/.opam/alf/bin/ocamlc.opt -config > /tmp/dune_149ac4_output
+# Promoting "_build/default/solution.opam" to "solution.opam"
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/.solution.objs/byte -no-alias-deps -opaque -o lib/.solution.objs/byte/solution.cmo -c -impl lib/solution.ml-gen)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I test/.test_solution.eobjs/byte -no-alias-deps -opaque -o test/.test_solution.eobjs/byte/dune__exe__Test_solution.cmi -c -intf test/test_solution.mli)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/solution.cma lib/.solution.objs/byte/solution.cmo)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I bin/.main.eobjs/byte -I lib/.solution.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.solution.objs/byte -I lib/.solution.objs/native -cmi-file lib/.solution.objs/byte/solution.cmi -no-alias-deps -opaque -o lib/.solution.objs/native/solution.cmx -c -impl lib/solution.ml-gen)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_solution.eobjs/byte -I test/.test_solution.eobjs/native -cmi-file test/.test_solution.eobjs/byte/dune__exe__Test_solution.cmi -no-alias-deps -opaque -o test/.test_solution.eobjs/native/dune__exe__Test_solution.cmx -c -impl test/test_solution.ml)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.solution.objs/byte -I lib/.solution.objs/native -cmi-file bin/.main.eobjs/byte/dune__exe__Main.cmi -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/solution.cmxa lib/.solution.objs/native/solution.cmx)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/solution.cmxs lib/solution.cmxa)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_solution.exe test/.test_solution.eobjs/native/dune__exe__Test_solution.cmx)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/solution.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

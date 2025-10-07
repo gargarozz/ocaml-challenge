@@ -1,0 +1,6 @@
+# dune init project solution
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/nicola/.cache/dune/db
+# Workspace root: /home/nicola/ocaml-challenge/1/mux/solution
+# Auto-detected concurrency: 4

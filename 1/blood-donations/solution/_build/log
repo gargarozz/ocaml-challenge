@@ -1,0 +1,18 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/nicola/.cache/dune/db
+# Workspace root: /home/nicola/ocaml-challenge/1/blood-donations/solution
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/nicola/.opam/alf/bin/ocamlc.opt -config > /tmp/dune_a5431c_output
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -bin-annot-occurrences -I .utop/.utop.eobjs/byte -I /home/nicola/.opam/alf/lib/bytes -I /home/nicola/.opam/alf/lib/findlib -I /home/nicola/.opam/alf/lib/lambda-term -I /home/nicola/.opam/alf/lib/logs -I /home/nicola/.opam/alf/lib/logs/lwt -I /home/nicola/.opam/alf/lib/lwt -I /home/nicola/.opam/alf/lib/lwt/unix -I /home/nicola/.opam/alf/lib/lwt_react -I /home/nicola/.opam/alf/lib/mew -I /home/nicola/.opam/alf/lib/mew_vi -I /home/nicola/.opam/alf/lib/ocaml/compiler-libs -I /home/nicola/.opam/alf/lib/ocaml/threads -I /home/nicola/.opam/alf/lib/ocaml/unix -I /home/nicola/.opam/alf/lib/ocplib-endian -I /home/nicola/.opam/alf/lib/ocplib-endian/bigstring -I /home/nicola/.opam/alf/lib/react -I /home/nicola/.opam/alf/lib/result -I /home/nicola/.opam/alf/lib/trie -I /home/nicola/.opam/alf/lib/uchar -I /home/nicola/.opam/alf/lib/utop -I /home/nicola/.opam/alf/lib/uucp -I /home/nicola/.opam/alf/lib/uuseg -I /home/nicola/.opam/alf/lib/uutf -I /home/nicola/.opam/alf/lib/xdg -I /home/nicola/.opam/alf/lib/zed -I lib/.solution.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /home/nicola/.opam/alf/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.bc /home/nicola/.opam/alf/lib/ocaml/compiler-libs/ocamlcommon.cma /home/nicola/.opam/alf/lib/ocaml/compiler-libs/ocamlbytecomp.cma /home/nicola/.opam/alf/lib/ocaml/compiler-libs/ocamltoplevel.cma /home/nicola/.opam/alf/lib/findlib/findlib.cma /home/nicola/.opam/alf/lib/findlib/findlib_top.cma /home/nicola/.opam/alf/lib/logs/logs.cma /home/nicola/.opam/alf/lib/lwt/lwt.cma /home/nicola/.opam/alf/lib/logs/lwt/logs_lwt.cma /home/nicola/.opam/alf/lib/ocplib-endian/ocplib_endian.cma /home/nicola/.opam/alf/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /home/nicola/.opam/alf/lib/ocaml/unix/unix.cma /home/nicola/.opam/alf/lib/ocaml/threads/threads.cma /home/nicola/.opam/alf/lib/lwt/unix/lwt_unix.cma -I /home/nicola/.opam/alf/lib/lwt/../stublibs /home/nicola/.opam/alf/lib/react/react.cma /home/nicola/.opam/alf/lib/lwt_react/lwt_react.cma /home/nicola/.opam/alf/lib/result/result.cma /home/nicola/.opam/alf/lib/uutf/uutf.cma /home/nicola/.opam/alf/lib/uucp/uucp.cma /home/nicola/.opam/alf/lib/uuseg/uuseg.cma /home/nicola/.opam/alf/lib/zed/zed.cma /home/nicola/.opam/alf/lib/trie/trie.cma /home/nicola/.opam/alf/lib/mew/mew.cma /home/nicola/.opam/alf/lib/mew_vi/mew_vi.cma /home/nicola/.opam/alf/lib/lambda-term/lambda_term.cma -I /home/nicola/.opam/alf/lib/lambda-term/../stublibs /home/nicola/.opam/alf/lib/xdg/xdg.cma -I /home/nicola/.opam/alf/lib/xdg/../stublibs /home/nicola/.opam/alf/lib/utop/uTop.cma lib/solution.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
