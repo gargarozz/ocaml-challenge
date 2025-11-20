@@ -1,0 +1,4 @@
+(lang dune 3.20)
+(name has-one)
+(sections (lib .) (bin ../../bin) (doc ../../doc/has-one))
+(files (lib (META dune-package opam)) (bin (has-one)) (doc (README.md)))
