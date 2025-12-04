@@ -1,0 +1,6 @@
+# dune init project string-of-list
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/nicola/.cache/dune/db
+# Workspace root: /home/nicola/ocaml-challenge/3/string-of-list
+# Auto-detected concurrency: 4
