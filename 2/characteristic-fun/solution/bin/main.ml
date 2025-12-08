@@ -1,5 +1,3 @@
-let 
-
 let f2 x = if x < 0 then failwith "undefined" else (if x<=2 then 1 else 0)
 
 let f3 x = if x < 0 then failwith "undefined" else (if x<=100 then 1 else 0)
@@ -20,5 +18,17 @@ let f10 x = if x < 0 then failwith "undefined" else (if x >= 4 && x <= 19 then 1
 
 let f11 x = if x < 0 then failwith "undefined" else (if x <= 50 && x mod 2 = 0 then 1 else 0)
 
-let f12 z = 
+(* ... *)
 
+let f15 x = if x < 0 then failwith "undefined" else (
+  let rec has_div x n =
+    if n>=x then
+      false
+    else 
+      if (x mod n) = 0 then
+        true
+      else
+        false
+  in not (has_div x 2)
+  )
+;;

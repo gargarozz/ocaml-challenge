@@ -1,0 +1,6 @@
+# dune init project peano
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/nicola/.cache/dune/db
+# Workspace root: /home/nicola/ocaml-challenge/3/peano
+# Auto-detected concurrency: 4
