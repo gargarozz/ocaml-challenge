@@ -76,31 +76,39 @@ let upgrade l =
 let wrong_laude l =
   let rec loop acc l = match l with
     | [] -> List.map (fun a -> a.name^" "^a.surname) acc
-    | x::xs -> match x.vote with None -> loop (x::acc) xs |
-      Some v -> if v < 30 && x.laude
-        then 
-          loop (x::acc) xs
-        else 
-          loop acc xs
+    | x::xs -> match x.vote with 
+      | None -> if x.laude 
+          then 
+            loop (x::acc) xs 
+          else loop acc xs 
+      | Some v -> if v < 30 && x.laude
+          then 
+            loop (x::acc) xs
+          else 
+            loop acc xs
   in loop [] l
 ;;
 
 let rec fix_laude l = match l with
   | [] -> []
-  | x::xs -> match x.vote with None -> x::fix_laude xs | Some v -> 
-    if
-      v < 30 && x.laude 
-    then
-      {id=x.id; name=x.name; surname=x.surname; vote=x.vote; laude=false}::(fix_laude xs)
-    else 
-      x::(fix_laude xs)
+  | x::xs -> match x.vote with 
+    | None -> if x.laude 
+        then 
+          {id=x.id; name=x.name; surname=x.surname; vote=x.vote; laude=false}::(fix_laude xs)
+        else
+          x::(fix_laude xs)
+    | Some v -> if v < 30 && x.laude 
+        then
+          {id=x.id; name=x.name; surname=x.surname; vote=x.vote; laude=false}::(fix_laude xs)
+        else 
+          x::(fix_laude xs)
 ;;
 
 
 let percent_passed l = 
   let tot = List.length l in
   let pass = List.length (passed l) in
-  (pass / tot) * 100
+  ((pass*100) / (tot*100))
 ;;
 
 let avg_vote l = 
