@@ -26,7 +26,7 @@ assert(seteq [[1;2]] [[2;1]] = false);;
 assert(seteq [[1];[1;2]] [[1;2];[1]]);;
 assert(mem [1;2] [[1];[2];[2;1]] = false);;
 
-let dup l = let (l',result) = 
+let dup l = let (_l',result) = 
   List.fold_left (fun (list, found) x -> 
     if found then (x::list, true) else (x::list, (mem x list))) ([],false) l 
   in result
@@ -63,7 +63,7 @@ assert(seteq (diff [1;2;3] [2;3;4]) [1]);;
 assert(seteq (diff [1;2;3] [3;1]) [2]);;
 
 let dsum l1 l2 = (List.fold_left (fun acc x -> (0,x)::acc) [] l1) @ 
-  (List.fold_left (fun acc x -> (1,x)::acc) [] l1)
+  (List.fold_left (fun acc x -> (1,x)::acc) [] l2)
 ;;
 
 assert(seteq (dsum [1;2;3] []) [(0,1);(0,2);(0,3)]);;

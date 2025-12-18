@@ -1,0 +1,4 @@
+(executable
+ (public_name partial-functions)
+ (name main)
+ (libraries partial_functions))

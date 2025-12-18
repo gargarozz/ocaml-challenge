@@ -1,0 +1,6 @@
+# dune init project partial-functions
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/nicola/.cache/dune/db
+# Workspace root: /home/nicola/ocaml-challenge/4/partial-functions
+# Auto-detected concurrency: 4
